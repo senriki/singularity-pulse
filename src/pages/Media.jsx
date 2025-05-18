@@ -3,12 +3,12 @@ export default function Media() {
     {
       title: "Singularity Pulse – Title Wallpaper",
       desc: "A glowing neural stream wallpaper representing the Pulse breach moment.",
-      image: "/assets/media/wallpaper_pulse_title.png",
+      image: "./assets/media/wallpaper_pulse_title.png",
     },
     {
       title: "Semireiya – Memory Core Visual",
       desc: "A soft, introspective wallpaper featuring Fujikawa Semireiya’s official art.",
-      image: "/assets/media/semireiya_wallpaper.png",
+      image: "./assets/media/semireiya_wallpaper.png",
     },
   ];
 
@@ -16,12 +16,12 @@ export default function Media() {
     {
       title: "Smile.exe – Debut Teaser Visual",
       desc: "The official promo art used in the debut teaser for Usagi_00’s glitch awakening.",
-      image: "/assets/media/smile_exe-poster.png",
+      image: "./assets/media/smile_exe-poster.png",
     },
     {
       title: "Outsourced Soul – Visual Poster",
       desc: "A monochrome burst of violet featuring IRIS_NULL and corrupted empathy.",
-      image: "/assets/media/teaser_outsourcedsoul.png",
+      image: "./assets/media/teaser_outsourcedsoul.png",
     },
   ];
 
@@ -29,12 +29,12 @@ export default function Media() {
     {
       title: "Commission – Semireiya (B/W)",
       desc: "A black-and-white art commission for Semireiya showing her calm and confident stance.",
-      image: "/assets/media/bw-semireiya.jpg",
+      image: "./assets/media/bw-semireiya.jpg",
     },
     {
       title: "Usagi_00 – Concept Art",
       desc: "Early visualization of Usagi_00 with her intense, slightly offbeat smile.",
-      image: "/assets/images/usagi_portrait_2.png",
+      image: "./assets/images/usagi_portrait_2.png",
     },
   ];
 

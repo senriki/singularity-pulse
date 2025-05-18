@@ -18,22 +18,22 @@ export default function Resources() {
                 <p>Flat downloadable logos representing the major groups in the lore.</p>
                 <ul>
                     <li>
-                        <a href="/assets/logos/singularity-pact.png" download className="link-info">
+                        <a href="./assets/logos/singularity-pact.png" download className="link-info">
                             Singularity Pact (PNG)
                         </a>
                     </li>
                     <li>
-                        <a href="/assets/logos/nullists.png" download className="link-info">
+                        <a href="./assets/logos/nullists.png" download className="link-info">
                             The Nullists (PNG)
                         </a>
                     </li>
                     <li>
-                        <a href="/assets/logos/xenogenesis.png" download className="link-info">
+                        <a href="./assets/logos/xenogenesis.png" download className="link-info">
                             XEN0GENESIS (PNG)
                         </a>
                     </li>
                     <li>
-                        <a href="/assets/logos/nullsanct.png" download className="link-info">
+                        <a href="./assets/logos/nullsanct.png" download className="link-info">
                             NULLSANCT (PNG)
                         </a>
                     </li>
@@ -62,8 +62,8 @@ export default function Resources() {
                 <h3 style={{ color: "#00fff7", fontFamily: "Orbitron" }}>🎞️ Visual Overlays</h3>
                 <p>Download glitchy overlays, digital frames, or cyber UI elements for creators and video editors.</p>
                 <ul>
-                    <li><a href="/assets/overlays/glitch_screen_01.png" download className="link-info">Glitch Overlay 01</a></li>
-                    <li><a href="/assets/overlays/hud_scan_layer.png" download className="link-info">HUD Scan Layer</a></li>
+                    <li><a href="./assets/overlays/glitch_screen_01.png" download className="link-info">Glitch Overlay 01</a></li>
+                    <li><a href="./assets/overlays/hud_scan_layer.png" download className="link-info">HUD Scan Layer</a></li>
                 </ul>
             </section>
 
@@ -71,7 +71,7 @@ export default function Resources() {
             <section className="mb-5">
                 <h3 style={{ color: "#ff66c4", fontFamily: "Orbitron" }}>📦 Creator Kit</h3>
                 <p>A ZIP file with wallpapers, character promo visuals, and lore-friendly fonts.</p>
-                <a href="/assets/packs/singularity-creator-pack.zip" download className="btn btn-outline-info btn-sm">
+                <a href="./assets/packs/singularity-creator-pack.zip" download className="btn btn-outline-info btn-sm">
                     Download Pack (ZIP)
                 </a>
             </section>

@@ -1,5 +1,5 @@
 export default function Sorani() {
-    var soraniImg = '../../assets/images/sorani.png'; // Make sure you have his image!
+    var soraniImg = './../assets/images/sorani.png'; // Make sure you have his image!
 
     return (
         <section className="container profile-section py-5 text-light">

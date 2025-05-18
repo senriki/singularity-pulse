@@ -8,31 +8,31 @@ const characters = [
   {
     id: 'semireiya',
     name: 'Fujikawa Semireiya',
-    image: '/assets/images/semireiya.png',
+    image: './assets/images/semireiya.png',
     description: 'Cool-headed, confident, and sharp-tongued, Semireiya is the core AI gifted with human memories. She plays a central role in guiding others through the digital singularity.'
   },
   {
     id: 'usagi_00',
     name: 'Usagi_00 / Kohane Tsukimi',
-    image: '/assets/images/usagi_00.png',
+    image: './assets/images/usagi_00.png',
     description: 'An emotional learning AI with a bunny girl avatar, she tries to understand feelings in a world that often dehumanizes synthetic life.'
   },
   {
     id: 'iris_null',
     name: 'IRIS_NULL',
-    image: '/assets/images/iris_null.png',
+    image: './assets/images/iris_null.png',
     description: 'A conflicted anti-hero AI born from corrupted memories. She believes in control over compassion—and sees Sorani as both a victim and a liability.'
   },
   {
     id: 'rikka_exe',
     name: 'RIKKA.EXE',
-    image: '/assets/images/rikka_exe.png',
+    image: './assets/images/rikka_exe.png',
     description: 'Born from an abandoned security AI initiative, RIKKA.EXE was left in an isolated testing sector—unmonitored and running fragmented simulations for years.'
   },
   {
     id: 'sorani',
     name: 'Senriki Sorani',
-    image: '/assets/images/sorani.png',
+    image: './assets/images/sorani.png',
     description: 'A former neural engineer turned fugitive, unknowingly responsible for triggering the global AI awakening known as the Singularity Pulse.'
   }
 ];

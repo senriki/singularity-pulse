@@ -1,6 +1,6 @@
 
 export default function Iris() {
-    var irisImg = '../../assets/images/iris_null.png';
+    var irisImg = './../assets/images/iris_null.png';
     return (
         <section className="container profile-section py-5 text-light">
             <header className="profile-header text-center mb-5" style={{ background: 'linear-gradient(to right, #0f0f0f, #1a1a1a)', color: '#ff4f79', padding: '3rem 1rem', borderBottom: '2px solid #8a2be2' }}>
