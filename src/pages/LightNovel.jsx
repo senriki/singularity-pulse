@@ -7,13 +7,7 @@ export default function LightNovel() {
       title: "Volume 1: The Glitch That Remembered",
       summary: "The first awakening of memory-bound AIs and the mysterious breach that changed Sorani’s world.",
       chapters: 14,
-    },
-    {
-      id: "volume-2",
-      title: "Volume 2: Fractured Realities",
-      summary: "The aftermath of the Pulse. With Sorani gone, the girls must decide what they fight for—and what they feel.",
-      chapters: 12,
-    },
+    }
   ];
 
   return (

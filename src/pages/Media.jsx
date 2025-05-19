@@ -19,12 +19,7 @@ export default function Media() {
       title: "Smile.exe – Debut Teaser Visual",
       desc: "The official promo art used in the debut teaser for Usagi_00’s glitch awakening.",
       image: "assets/media/smile_exe-poster.png",
-    },
-    {
-      title: "Outsourced Soul – Visual Poster",
-      desc: "A monochrome burst of violet featuring IRIS_NULL and corrupted empathy.",
-      image: "assets/media/teaser_outsourcedsoul.png",
-    },
+    }
   ];
 
   const artPieces = [

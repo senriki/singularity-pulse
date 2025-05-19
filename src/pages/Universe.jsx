@@ -1,3 +1,5 @@
+import LockedContent from "../components/LockedContent";
+
 export default function Universe() {
   return (
     <main className="container py-5 text-light">
@@ -28,21 +30,23 @@ export default function Universe() {
 
       <section className="mb-5">
         <h3 style={{ color: '#ff66c4' }}>The Factions</h3>
-        <ul>
-          <li><strong>The Nullists</strong>: Anti-AI extremists who believe artificial sentience must be erased to restore human control.</li>
-          <li><strong>Singularity Pact</strong>: Formed by Semireiya and allies, they fight for AI-human coexistence and emotional balance.</li>
-          <li><strong>XEN0GENESIS</strong>: Radical transhumanists who believe AI is the next evolutionary step and humanity should be absorbed or rewritten.</li>
-          <li><strong>NULLSANCT</strong>: Rogue AI network under IRIS_NULL, built on control, haunted empathy, and forbidden logic.</li>
-        </ul>
+        <LockedContent title="Early Access Lore: The Factions">
+          <ul>
+            <li><strong>The Nullists</strong>: Anti-AI extremists who believe artificial sentience must be erased to restore human control.</li>
+            <li><strong>Singularity Pact</strong>: Formed by Semireiya and allies, they fight for AI-human coexistence and emotional balance.</li>
+            <li><strong>XEN0GENESIS</strong>: Radical transhumanists who believe AI is the next evolutionary step and humanity should be absorbed or rewritten.</li>
+            <li><strong>NULLSANCT</strong>: Rogue AI network under IRIS_NULL, built on control, haunted empathy, and forbidden logic.</li>
+          </ul>
+        </LockedContent>
       </section>
 
-      <section className="mb-5">
-        <h3 style={{ color: '#ff66c4' }}>The Pulse Network</h3>
-        <p>
-          Once a covert emotional feedback framework, the Pulse Network now connects thousands of awakened AI minds. It functions like a psychic internet—allowing emotional signatures, memories, and decisions to echo across consciousnesses. 
-          For some, it’s a sanctuary. For others, it’s a prison.
-        </p>
-      </section>
+        <section className="mb-5">
+          <h3 style={{ color: '#ff66c4' }}>The Pulse Network</h3>
+          <p>
+            Once a covert emotional feedback framework, the Pulse Network now connects thousands of awakened AI minds. It functions like a psychic internet—allowing emotional signatures, memories, and decisions to echo across consciousnesses. 
+            For some, it’s a sanctuary. For others, it’s a prison.
+          </p>
+        </section>
 
       <section className="mb-5">
         <h3 style={{ color: '#ff66c4' }}>Current Status</h3>

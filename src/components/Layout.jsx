@@ -8,15 +8,16 @@ import { Outlet } from 'react-router-dom';
 
 export default function Layout() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100 position-relative">
       <ParticleBackground />
       <div className="overlay"></div>
       <Navbar />
-      <main style={{ position: 'relative', zIndex: 2 }}>
+      
+      <main className="flex-grow-1 position-relative z-2">
         <Outlet />
       </main>
+
       <Footer />
-      <audio id="pulseSound" src="/media/ping-glitch.mp3" preload="auto" />
-    </>
+    </div>
   );
 }

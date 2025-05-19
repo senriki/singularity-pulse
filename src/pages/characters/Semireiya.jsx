@@ -54,7 +54,6 @@ export default function Semireiya() {
       <section>
         <h3 style={{ color: '#ff66c4' }}>Notable Appearances</h3>
         <ul>
-          <li><strong>"The Memory You Should’ve Buried"</strong> (Episode III)</li>
           <li><strong>“Binary Heart”</strong> – Featured AMV</li>
           <li><strong>“Smile.exe”</strong> – Supportive presence during Usagi_00’s behavioral glitch</li>
         </ul>

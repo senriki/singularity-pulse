@@ -1,3 +1,6 @@
+import LockedContent from "../components/LockedContent";
+import { asset } from "../utils/asset";
+
 export default function Resources() {
     return (
         <main className="container py-5 text-light">
@@ -16,28 +19,30 @@ export default function Resources() {
             <section className="mb-5">
                 <h3 style={{ color: "#ff66c4", fontFamily: "Orbitron" }}>🔧 Faction Logos</h3>
                 <p>Flat downloadable logos representing the major groups in the lore.</p>
-                <ul>
-                    <li>
-                        <a href="./assets/logos/singularity-pact.png" download className="link-info">
-                            Singularity Pact (PNG)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./assets/logos/nullists.png" download className="link-info">
-                            The Nullists (PNG)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./assets/logos/xenogenesis.png" download className="link-info">
-                            XEN0GENESIS (PNG)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./assets/logos/nullsanct.png" download className="link-info">
-                            NULLSANCT (PNG)
-                        </a>
-                    </li>
-                </ul>
+                <LockedContent>
+                    <ul>
+                        <li>
+                            <a href="./assets/logos/singularity-pact.png" download className="link-info">
+                                Singularity Pact (PNG)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/logos/nullists.png" download className="link-info">
+                                The Nullists (PNG)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/logos/xenogenesis.png" download className="link-info">
+                                XEN0GENESIS (PNG)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/logos/nullsanct.png" download className="link-info">
+                                NULLSANCT (PNG)
+                            </a>
+                        </li>
+                    </ul>
+                </LockedContent>
             </section>
 
             {/* Voice Samples */}
@@ -46,13 +51,7 @@ export default function Resources() {
                 <p>Sample lines recorded for each AI character (WAV format).</p>
                 <ul>
                     <li>
-                        <a href="/audio/semireiya_intro.wav" download className="link-info">Semireiya - Introduction Line</a>
-                    </li>
-                    <li>
-                        <a href="/audio/usagi_glitch_giggle.wav" download className="link-info">Usagi_00 - Glitch Giggle</a>
-                    </li>
-                    <li>
-                        <a href="/audio/iris_warning_clip.wav" download className="link-info">IRIS_NULL - System Warning</a>
+                        <a href={asset('assets/audio/IntroFujikawa.wav', true)} download className="link-info">Semireiya - Introduction Line</a>
                     </li>
                 </ul>
             </section>
@@ -71,9 +70,6 @@ export default function Resources() {
             <section className="mb-5">
                 <h3 style={{ color: "#ff66c4", fontFamily: "Orbitron" }}>📦 Creator Kit</h3>
                 <p>A ZIP file with wallpapers, character promo visuals, and lore-friendly fonts.</p>
-                <a href="./assets/packs/singularity-creator-pack.zip" download className="btn btn-outline-info btn-sm">
-                    Download Pack (ZIP)
-                </a>
             </section>
             {/* Licensing Notice */}
             <section className="mt-5 pt-4 border-top border-secondary">

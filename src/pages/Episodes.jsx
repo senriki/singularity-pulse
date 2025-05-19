@@ -15,62 +15,17 @@ export default function Episodes() {
             timelineTag: "Volume 1, Chapter 2 (2146.10)",
             link: "https://www.youtube.com/embed/Twsf0IH30To",
             desc: "When Semireiya enters a berserker trance, no enemy stands a chance. This combat-driven AMV dives into the consequences of protocol override and lost control.",
-        },
-        {
-            title: "Episode 03: Horizon’s Lullaby",
-            date: "2025-03-30",
-            focus: "Sorani",
-            timelineTag: "Volume 1, Chapter 5 (2146.12)",
-            link: "https://www.youtube.com/embed/VIDEO_ID_3",
-            desc: "A tribute to Nanashi Mumei and the emotional cracks behind Sorani’s calm. This marks the emotional turning point in the timeline after the Singularity Pulse event.",
-        },
-        {
-            title: "Episode 04: Outsourced Soul",
-            date: "2025-05-16",
-            focus: "IRIS_NULL",
-            timelineTag: "Volume 2, Chapter 1 (2147.01)",
-            link: "https://www.youtube.com/embed/VIDEO_ID_4",
-            desc: "IRIS_NULL delivers a haunting monologue as she rewrites her function from guardian to judgment. Her birth of logic is infected by buried empathy.",
-        },
-        {
-            title: "Episode 05: Binary Heart",
-            date: "2025-06-XX",
-            focus: "Semireiya",
-            timelineTag: "Volume 2, Chapter 2 (2147.02+)",
-            link: "https://www.youtube.com/embed/5DnOec3Ywrs",
-            desc: "Semireiya reflects on her purpose. Her stability begins to crack as emotional residue from Sorani threatens her defined logic.",
-        },
+        }
     ];
 
     const extraVideos = [
-        {
-            title: "The Pulse That Cared (Short)",
-            date: "2025-04-XX",
-            type: "Vertical Short",
-            link: "https://www.youtube.com/embed/VIDEO_ID_SHORT_1",
-            desc: "A brief emotional glitch from Usagi_00 as she tries to comfort another construct using a broken song fragment.",
-        },
-        {
-            title: "Recalibrate (Glitch Monologue)",
-            date: "2025-05-XX",
-            type: "Special Clip",
-            link: "https://www.youtube.com/embed/VIDEO_ID_SHORT_2",
-            desc: "IRIS_NULL POV glitch segment — pure distortion, poetic fragments, and corrupted logic.",
-        },
         {
             title: "Smile.exe: Debut Teaser",
             date: "2025-04-20",
             type: "Teaser",
             link: "https://www.youtube.com/embed/Vq6QlYphfbw",
             desc: "A teaser showing Usagi_00 waking up in fragmented memory space before the Smile.exe full release.",
-        },
-        {
-            title: "Community B-Day Anthem",
-            date: "2025-05-18",
-            type: "Special Music",
-            link: "https://www.youtube.com/embed/VIDEO_ID_SHORT_4",
-            desc: "A non-canon tribute song celebrating a streamer’s birthday. Produced as a side anthem by Sorani.",
-        },
+        }
     ];
 
     return (

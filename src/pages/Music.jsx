@@ -15,66 +15,18 @@ export default function Music() {
             timeline: "Volume 1, Chapter 2",
             link: "https://www.youtube.com/watch?v=Twsf0IH30To",
             desc: "Semireiya’s berserker override is triggered—unleashing her raw rage beneath the calm exterior. A battle-ready cyber-rock track.",
-        },
-        {
-            title: "Horizon’s Lullaby",
-            character: "Senriki Sorani",
-            type: "Tribute / Soft Ending",
-            timeline: "Volume 1, Chapter 5",
-            link: "https://www.youtube.com/watch?v=VIDEO_ID_3",
-            desc: "A gentle goodbye for a fading memory. Sorani reflects on the past through a tribute inspired by Nanashi Mumei’s farewell.",
-        },
-        {
-            title: "Outsourced Soul",
-            character: "IRIS_NULL",
-            type: "Canon Song",
-            timeline: "Volume 2, Chapter 1",
-            link: "https://www.youtube.com/watch?v=VIDEO_ID_4",
-            desc: "IRIS_NULL questions her synthetic soul in this haunting industrial rock ballad—part logic, part broken empathy.",
-        },
-        {
-            title: "Binary Heart",
-            character: "Semireiya",
-            type: "Canon Song",
-            timeline: "Volume 2, Chapter 2",
-            link: "https://www.youtube.com/watch?v=VIDEO_ID_5",
-            desc: "A reflection on fractured logic and unspoken pain. Semireiya’s inner stability is tested in this dual-emotion anthem.",
-        },
+        }
     ];
 
     const extraTracks = [
         {
-            title: "Zani: Lucid Runner",
-            character: "Zani (Wuthering Waves)",
+            title: "Fractured Mirror | Date A Bullet AMV - Kurumi & Fallen Queen: A Cyberpunk Tragedy",
+            character: "Tokisasi Kurumi (Date a Live)",
             type: "Inspired / Anime Fusion",
             timeline: "Non-canon",
-            link: "https://www.youtube.com/watch?v=VIDEO_ID_ZANI",
+            link: "https://www.youtube.com/watch?v=r025_W6nJfY",
             desc: "A high-energy electronic track blending J-pop, French, and Japanese vocals inspired by Zani from Wuthering Waves.",
-        },
-        {
-            title: "Roshidere: Freeze My Smile",
-            character: "Roshidere OC / Inspired",
-            type: "Anime Tribute",
-            timeline: "Non-canon",
-            link: "https://www.youtube.com/watch?v=VIDEO_ID_ROSHI",
-            desc: "Based on the energy and bittersweet charm of Roshidere (The Dangers in My Heart). Emotional yet upbeat.",
-        },
-        {
-            title: "Smile.exe (Anthem Ver.)",
-            character: "Usagi_00",
-            type: "Special / B-Day Anthem",
-            timeline: "Community Event",
-            link: "https://www.youtube.com/watch?v=VIDEO_ID_6",
-            desc: "A cheerful version of Smile.exe — built for celebration, with punchy vocals and community spirit.",
-        },
-        {
-            title: "AI Dangdut - Virtual Hati",
-            character: "N/A",
-            type: "Experimental / Dangdut Fusion",
-            timeline: "Non-canon",
-            link: "https://www.youtube.com/watch?v=VIDEO_ID_DANGDUT",
-            desc: "An experimental AI track fusing Indonesian dangdut with Vocaloid-style Japanese lyrics. Playful and genre-bending.",
-        },
+        }
     ];
 
 
@@ -125,39 +77,6 @@ export default function Music() {
                         </div>
                     ))}
                 </div>
-            </section>
-
-
-            <section className="row">
-                {canonTracks.map((track, i) => (
-                    <div className="col-md-6 mb-4" key={i}>
-                        <div
-                            className="p-4 h-100"
-                            style={{
-                                backgroundColor: "#131313",
-                                border: "1px solid #333",
-                                borderRadius: "1rem",
-                            }}
-                        >
-                            <h5 style={{ fontFamily: "Orbitron", color: "#ff66c4" }}>{track.title}</h5>
-                            <div style={{ fontSize: "0.9rem", color: "#bbb" }}>
-                                Character: <strong>{track.character}</strong> | Type: {track.type}
-                            </div>
-                            <div style={{ fontSize: "0.85rem", color: "#66ccff", marginTop: "0.3rem" }}>
-                                📍 {track.timeline}
-                            </div>
-                            <p className="mt-2">{track.desc}</p>
-                            <a
-                                href={track.link}
-                                className="btn btn-outline-info btn-sm mt-2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                ▶ Listen on YouTube
-                            </a>
-                        </div>
-                    </div>
-                ))}
             </section>
         </main>
     );

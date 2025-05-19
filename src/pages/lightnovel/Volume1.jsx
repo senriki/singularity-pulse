@@ -2,11 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Volume1() {
   const chapters = [
-    { id: "prologue", title: "Prologue: The Glitch That Remembered" },
-    { id: "chapter-1", title: "Chapter 1: Memory Corruption" },
-    { id: "chapter-2", title: "Chapter 2: Echoes in the Code" },
-    { id: "chapter-3", title: "Chapter 3: Fragments of Usagi" },
-    // ... add more chapters as they’re ready
+    { id: "prologue", title: "Prologue: The Glitch That Remembered" }
   ];
 
   return (
