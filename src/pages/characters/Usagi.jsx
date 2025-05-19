@@ -1,6 +1,8 @@
+import { asset } from './../../utils/asset';
 
 export default function Usagi() {
-    var usagiImg = './../assets/images/usagi_00.png';
+    var usagiImg = asset('assets/images/usagi_00.png', true);
+
     return (
         <section className="container profile-section py-5 text-light">
             <header className="profile-header text-center mb-5" style={{ background: 'linear-gradient(to right, #0f0f0f, #1a1a1a)', color: '#00fff7', padding: '3rem 1rem', borderBottom: '2px solid #ff66c4' }}>

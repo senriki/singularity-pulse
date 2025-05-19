@@ -1,5 +1,7 @@
+import { asset } from './../../utils/asset';
+
 export default function Sorani() {
-    var soraniImg = './../assets/images/sorani.png'; // Make sure you have his image!
+    var soraniImg = asset('assets/images/sorani.png', true);
 
     return (
         <section className="container profile-section py-5 text-light">

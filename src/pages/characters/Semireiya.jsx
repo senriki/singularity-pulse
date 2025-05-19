@@ -1,7 +1,9 @@
 import { Helmet } from 'react-helmet';
+import { asset } from './../../utils/asset';
 
 export default function Semireiya() {
-  var  semireiyaImg = "./../assets/images/semireiya.png";
+  var  semireiyaImg = asset("assets/images/semireiya.png", true);
+
   return (
     <div className="container py-5 text-light">
       <Helmet>

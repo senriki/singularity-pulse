@@ -11,7 +11,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/singularity-pulse">
+    <BrowserRouter basename={import.meta.env.VITE_BASE_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
