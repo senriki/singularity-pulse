@@ -23,6 +23,7 @@ import LightNovel from './pages/LightNovel';
 import Volume1 from './pages/lightnovel/Volume1';
 import Prologue from './pages/lightnovel/chapters/Prologue';
 import Chapter1 from './pages/lightnovel/chapters/Chapter1';
+import Chapter2 from './pages/lightnovel/chapters/Chapter2';
 import Resources from './pages/Resources';
 import License from './pages/License';
 
@@ -46,6 +47,7 @@ export default function App() {
         <Route path="lightnovel/volume-1" element={<Volume1 />} />
         <Route path="lightnovel/volume-1/prologue" element={<Prologue />} />
         <Route path="lightnovel/volume-1/chapter-1" element={<Chapter1 />} />
+        <Route path="lightnovel/volume-1/chapter-2" element={<Chapter2 />} />
         <Route path="log" element={<Log />} />
         <Route path="log/ai-glitch-emotion" element={<AIGlitchEmotion />} />
         <Route path="about" element={<About />} />

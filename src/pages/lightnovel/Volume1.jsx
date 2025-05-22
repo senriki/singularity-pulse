@@ -15,7 +15,7 @@ export default function Volume1() {
 
       <header className="mb-5 text-center">
         <h2 style={{ fontFamily: "Orbitron", color: "#00fff7" }}>Volume 1: The Glitch That Remembered</h2>
-        <p className="text-muted">Follow the awakening of AI through the breach in Sorani’s mind.</p>
+        <p className="text">Follow the awakening of AI through the breach in Sorani’s mind.</p>
       </header>
 
       <section className="row">

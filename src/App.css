@@ -215,3 +215,91 @@ nav {
     background-position: 100px 0;
   }
 }
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 9999;
+  appearance: none;
+  border: none;
+  background-color: #111;
+}
+
+.scroll-progress-bar::-webkit-progress-bar {
+  background-color: #111;
+}
+
+.scroll-progress-bar::-webkit-progress-value {
+  background: linear-gradient(90deg, #00fff7, #ff66c4);
+  transition: width 0.1s ease-in-out;
+}
+
+.scroll-progress-bar::-moz-progress-bar {
+  background: linear-gradient(90deg, #00fff7, #ff66c4);
+}
+
+.terminal-block div {
+  animation: flicker 2s linear infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+  60% { opacity: 0.95; }
+  80% { opacity: 0.8; }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink-cursor 0.85s steps(2) infinite, glitch-cursor 0.28s infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+@keyframes glitch-cursor {
+  0% { filter: drop-shadow(0 0 2px #ff2f70); }
+  25% { filter: drop-shadow(0 0 5px #c279ff); }
+  60% { filter: drop-shadow(0 0 0px #00fff7); }
+  100% { filter: drop-shadow(0 0 2px #ff2f70); }
+}
+
+.cyber-quote {
+  border-left: 4px solid #ff66c4;
+  margin: 2em 0;
+  padding: 1.1em 1.4em;
+  background: rgba(20,14,28,0.75);
+  color: #fff;
+  font-style: italic;
+  font-family: 'Orbitron', 'Inter', monospace;
+  letter-spacing: 0.02em;
+  font-size: 1.12em;
+  box-shadow: 0 0 12px #ff66c470;
+  position: relative;
+}
+.cyber-quote.memory-echo {
+  border-left: 4px solid #00fff7;
+  background: rgba(16,34,48,0.75);
+  color: #00fff7;
+}
+.cyber-quote.axiom-block {
+  border-left: 4px dashed #ffe158;
+  background: rgba(40,38,0,0.75);
+  color: #ffe158;
+  font-style: normal;
+}
+.cyber-quote.lore-fact {
+  border-left: 4px double #c279ff;
+  background: rgba(34,10,44,0.65);
+  color: #c279ff;
+}
+.cyber-quote span {
+  display: block;
+  margin-bottom: 0.3em;
+}

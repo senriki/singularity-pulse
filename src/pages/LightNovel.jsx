@@ -23,7 +23,6 @@ export default function LightNovel() {
             <div className="p-4 h-100" style={{ backgroundColor: "#121212", border: "1px solid #333", borderRadius: "1rem" }}>
               <h4 style={{ color: "#ff66c4", fontFamily: "Orbitron" }}>{v.title}</h4>
               <p style={{ color: "#ccc" }}>{v.summary}</p>
-              <div style={{ fontSize: "0.9rem", color: "#999" }}>📘 {v.chapters} Chapters</div>
               <Link to={`/lightnovel/${v.id}`} className="btn btn-outline-info btn-sm mt-3">
                 Read Volume
               </Link>

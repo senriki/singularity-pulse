@@ -17,7 +17,7 @@ export default ({ mode }) => {
         devOptions: {
           enabled: true
         },
-        includeAssets: ['offline.html'],
+        includeAssets: [env.VITE_BASE_URL || '/' + 'offline.html'],
         manifest: {
           name: 'Singularity Pulse',
           short_name: 'Pulse',
@@ -32,14 +32,14 @@ export default ({ mode }) => {
               type: 'image/x-icon'
             },
             {
-              src: '/cover-image.png',
+              src: env.VITE_BASE_URL || '/' + '/cover-image.png',
               sizes: '512x512',
               type: 'image/png'
             }
           ]
         },
         workbox: {
-          navigateFallback: '/offline.html',
+          navigateFallback: env.VITE_BASE_URL || '/' + '/offline.html',
           runtimeCaching: [
             {
               urlPattern: ({ request }) => request.destination === 'document',
