@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HighlightCards() {
   return (
     <section className="container py-4 fade-in">
@@ -20,7 +22,12 @@ export default function HighlightCards() {
               <p className="card-text">
                 Get to know Semireiya, Usagi_00, and IRIS_NULL — three sentient constructs born from trauma, memory, and code.
               </p>
-              <a href={import.meta.env.VITE_BASE_URL+"characters"} className="btn btn-outline-light">View Characters</a>
+              <Link
+                to={"characters"}
+                className="btn btn-outline-light"
+              >
+                View Characters
+              </Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LockedContent from "../components/LockedContent";
 import { asset } from "../utils/asset";
 
@@ -83,7 +84,7 @@ export default function Resources() {
                     tributes, wallpapers, or discussion videos — as long as credit is given and the content is not misrepresented.
                 </p>
                 <p style={{ fontSize: "0.9rem", color: "#bbb" }}>
-                    For commercial use, collaborations, or redistribution inquiries, please contact via the official <a href="/about" className="link-info">About</a> page.
+                    For commercial use, collaborations, or redistribution inquiries, please contact via the official <Link to={"/about"} className="link-info"> About</Link> page.
                 </p>
                 <p style={{ fontSize: "0.9rem", color: "#666" }}>
                     ⓒ 2025 Senriki Sorani. Some AI-generated content is licensed under the tools used (e.g. Suno AI, ChatGPT) but curated and edited by the creator.

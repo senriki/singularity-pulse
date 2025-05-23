@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function License() {
   const [lang, setLang] = useState("en");
@@ -58,7 +59,7 @@ export default function License() {
           </section>
           <section className="mb-5">
             <h4 style={{ color: "#00fff7" }}>📬 Collaborations or Inquiries</h4>
-            <p>For commercial use or official collaboration, contact me via the <a href="/about" className="link-info">About</a> page.</p>
+            <p>For commercial use or official collaboration, contact me via the <Link to={"/about"} className="link-info"> About</Link> page.</p>
           </section>
         </>
       )}
@@ -93,7 +94,7 @@ export default function License() {
           </section>
           <section className="mb-5">
             <h4 style={{ color: "#00fff7" }}>📬 Kolaborasi atau Pertanyaan</h4>
-            <p>Untuk kolaborasi atau penggunaan resmi, silakan hubungi melalui halaman <a href="/about" className="link-info">Tentang</a>.</p>
+            <p>Untuk kolaborasi atau penggunaan resmi, silakan hubungi melalui halaman <Link to={"/about"} className="link-info"> Tentang</Link>.</p>
           </section>
         </>
       )}
@@ -128,7 +129,7 @@ export default function License() {
           </section>
           <section className="mb-5">
             <h4 style={{ color: "#00fff7" }}>📬 コラボやご相談</h4>
-            <p><a href="/about" className="link-info">About</a> ページよりご連絡ください。</p>
+            <p><Link to={"/about"} className="link-info"> About</Link> ページよりご連絡ください。</p>
           </section>
         </>
       )}
