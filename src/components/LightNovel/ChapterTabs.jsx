@@ -1,16 +1,34 @@
 import { useState } from "react";
 
 /**
- * ChapterTabs
- * Shows a tab interface for chapter text and an optional illustration (image URL or JSX).
- *
- * @param {JSX.Element} textContent - The main chapter text/content.
- * @param {string|JSX.Element} illustration - Image URL or custom JSX.
- * @param {string} illustrationLabel - Tab label for the illustration (default: 'Illustration').
+ * ChapterTabs with flexible illustration sizing.
+ * 
+ * @param {JSX.Element} textContent
+ * @param {string|JSX.Element} illustration
+ * @param {string|JSX.Element} translation
+ * @param {string} translationLabel
+ * @param {string} illustrationLabel
+ * @param {string} mobileMaxWidth - e.g. "98vw"
+ * @param {string} mobileMaxHeight - e.g. "50vh"
  */
-export default function ChapterTabs({ textContent, illustration, illustrationLabel = "Illustration" }) {
+export default function ChapterTabs({
+    textContent,
+    illustration,
+    translation,
+    translationLabel = "Translation",
+    illustrationLabel = "Illustration",
+    mobileMaxWidth = "100vw",
+    mobileMaxHeight = "45vh"
+}) {
     const [tab, setTab] = useState("text");
     const hasIllustration = !!illustration;
+    const hasTranslation = !!translation;
+
+    // Only needed if you want to pass sizing as CSS variables for per-chapter control
+    const artImgVars = {
+        "--mobile-art-width": mobileMaxWidth,
+        "--mobile-art-height": mobileMaxHeight,
+    };
 
     return (
         <div className="chapter-tabs">
@@ -33,27 +51,26 @@ export default function ChapterTabs({ textContent, illustration, illustrationLab
                         {illustrationLabel}
                     </button>
                 )}
+                {hasTranslation && (
+                    <button
+                        className={`nav-link${tab === "translation" ? " active" : ""}`}
+                        onClick={() => setTab("translation")}
+                        type="button"
+                        role="tab"
+                    >
+                        {translationLabel}
+                    </button>
+                )}
             </div>
             <div>
-                {tab === "text" && 
-                <article
-                    style={{
-                        lineHeight: "1.8",
-                        color: "#ccc",
-                        fontSize: "1rem",
-                        marginTop: "1.5rem",
-                    }}
-                >
-                    {textContent}
-                </article>
-                }
+                {tab === "text" && <div className="chapter-text">{textContent}</div>}
                 {tab === "illustration" && hasIllustration && (
                     <div className="chapter-illustration text-center">
                         {typeof illustration === "string" ? (
                             <img
                                 src={illustration}
                                 alt={illustrationLabel}
-                                className="chapter-art-img"
+                                className="chapter-art-img responsive-art-img"
                                 style={{
                                     maxWidth: "100%",
                                     maxHeight: "70vh",
@@ -61,12 +78,16 @@ export default function ChapterTabs({ textContent, illustration, illustrationLab
                                     boxShadow: "0 0 18px #00fff788",
                                     margin: "0 auto",
                                     display: "block",
+                                    ...artImgVars,
                                 }}
                             />
                         ) : (
                             illustration
                         )}
                     </div>
+                )}
+                {tab === "translation" && hasTranslation && (
+                    <div className="chapter-translation">{translation}</div>
                 )}
             </div>
         </div>

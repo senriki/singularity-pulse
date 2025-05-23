@@ -30,3 +30,35 @@
   border: none;
   font-family: 'Orbitron', 'Inter', sans-serif;
 }
+
+
+.responsive-art-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 1em;
+  box-shadow: 0 0 18px #00fff788;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .responsive-art-img {
+    max-width: var(--mobile-art-width, 100vw) !important;
+    max-height: var(--mobile-art-height, 45vh) !important;
+  }
+}
+.chapter-tabs .nav-tabs {
+  border-bottom: 2px solid #ff66c4;
+}
+.chapter-tabs .nav-link.active {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  border-color: #ff66c4 #ff66c4 #181029;
+  color: #ff66c4 !important;
+  font-weight: bold;
+}
+.chapter-tabs .nav-link {
+  color: #fff;
+  background: none;
+  border: none;
+  font-family: 'Orbitron', 'Inter', sans-serif;
+}

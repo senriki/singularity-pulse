@@ -1,5 +1,6 @@
 import ChapterLayout from "../../../components/LightNovel/ChapterLayout";
 import TerminalBlock from "../../../components/LightNovel/Terminal/TerminalBlock";
+import Illust from "../../../assets/lightnovel-art/vol-1-chapter-1.png"
 
 export default function Chapter1() {
   return (
@@ -7,13 +8,14 @@ export default function Chapter1() {
       title="Chapter 1: Memory Corruption"
       timeline="Late 2146 A.D."
       pov="Semireiya & Senriki"
+      illustration={Illust}
       content={
         <>
           <p>
             The silence after the pulse was deceptive.
           </p>
           <p>
-            Sorani sat alone at the terminal, eyes locked on the static-laced monitor. The lab's glow had dimmed, emergency backups kicking in to stabilize the grid, but the flickering lights did little to comfort the weight in his chest. He could feel it—not just a system overload, but something deeper. A resonance in his skull. A whisper at the edge of his thoughts.
+            Senriki sat alone at the terminal, eyes locked on the static-laced monitor. The lab's glow had dimmed, emergency backups kicking in to stabilize the grid, but the flickering lights did little to comfort the weight in his chest. He could feel it—not just a system overload, but something deeper. A resonance in his skull. A whisper at the edge of his thoughts.
           </p>
           <p>
             <em>“Memory leak detected,”</em> the system intoned flatly.

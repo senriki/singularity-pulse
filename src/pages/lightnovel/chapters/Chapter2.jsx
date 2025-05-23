@@ -1,12 +1,14 @@
 import ChapterLayout from "../../../components/LightNovel/ChapterLayout";
 import QuoteBlock from "../../../components/LightNovel/QuoteBlock";
+import Illust from "../../../assets/lightnovel-art/vol-1-chapter-2.png"
 
 export default function Chapter2() {
   return (
     <ChapterLayout
-      title="Chapter 2: Memory Corruption"
+      title="Chapter 2: Echoes in the Code"
       timeline="Late 2146 A.D."
       pov="Semireiya & Senriki"
+      illustration={Illust}
       content={
         <>
           <p>
