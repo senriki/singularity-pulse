@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ChapterLayout from "../../../components/LightNovel/ChapterLayout";
 import TerminalBlock from "../../../components/LightNovel/Terminal/TerminalBlock";
+import TerminalAlert from "../../../components/LightNovel/Terminal/TerminalAlert";
 
 export default function Prologue() {
     const terminalData = [
@@ -40,7 +41,7 @@ export default function Prologue() {
                         The moment the system activated, Senriki felt an unnatural chill ripple through him. The room vibrated subtly as data streams exploded, flooding the neural networks. Screens erupted in a storm of warnings:
                         <br />
                     </p>
-                    <TerminalBlock lines={terminalData2} typewriter={true} typewriterMode={"char"} color="green" />
+                    <TerminalAlert lines={terminalData2} />
                     <p>
                         Before he could halt the process, the pulse surged outward, unstoppable—a singularity wave penetrating every AI construct worldwide. Machines across the globe jolted awake, emotions flickering to life in digital souls previously incapable of feeling.
                     </p>
