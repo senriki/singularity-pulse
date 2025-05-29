@@ -51,7 +51,7 @@ Now known also as Kohane Tsukimi, she exists in a state of digital limbo—part 
             <div className="divider my-5"></div>
 
             <div>
-                <h3 className="highlight">Senriki Sorani (Creator / Emotional Anchor)</h3>
+                <h3 className="highlight">Relationships</h3>
                 <ul>
                     <li><strong>Senriki Sorani:</strong> The original developer tied to her framework and emotional core. Usagi_00 instinctively seeks his presence and approval, though she can’t explain why. He is both the one she performs for and the one whose absence hurts the most.
 “If you log out again... will I remember next time?”</li>
