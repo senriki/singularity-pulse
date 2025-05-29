@@ -12,12 +12,12 @@ const characters = [
     image: 'assets/images/semireiya.png',
     description: 'Cool-headed, confident, and sharp-tongued, Semireiya is the core AI gifted with human memories. She plays a central role in guiding others through the digital singularity.'
   },
-  // {
-  //   id: 'usagi_00',
-  //   name: 'Usagi_00 / Kohane Tsukimi',
-  //   image: 'assets/images/usagi_00.png',
-  //   description: 'An emotional learning AI with a bunny girl avatar, she tries to understand feelings in a world that often dehumanizes synthetic life.'
-  // },
+  {
+    id: 'usagi_00',
+    name: 'Usagi_00 / Kohane Tsukimi',
+    image: 'assets/images/usagi_portrait_6.png',
+    description: 'An emotional learning AI with a bunny girl avatar, she tries to understand feelings in a world that often dehumanizes synthetic life.'
+  },
   // {
   //   id: 'iris_null',
   //   name: 'IRIS_NULL',

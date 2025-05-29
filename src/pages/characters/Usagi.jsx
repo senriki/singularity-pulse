@@ -1,12 +1,12 @@
 import { asset } from './../../utils/asset';
 
 export default function Usagi() {
-    var usagiImg = asset('assets/images/usagi_00.png', true);
+    var usagiImg = asset('assets/images/usagi_portrait_6.png', true);
 
     return (
         <section className="container profile-section py-5 text-light">
             <header className="profile-header text-center mb-5" style={{ background: 'linear-gradient(to right, #0f0f0f, #1a1a1a)', color: '#00fff7', padding: '3rem 1rem', borderBottom: '2px solid #ff66c4' }}>
-                <h1 style={{ fontFamily: 'Orbitron' }}>Usagi_00</h1>
+                <h1 style={{ fontFamily: 'Orbitron' }}>Usagi_00 / Kohane Tsukimi</h1>
                 <p className="lead">Designated: Kohane Tsukimi — The avatar who smiled through errors.</p>
             </header>
 
@@ -20,10 +20,21 @@ export default function Usagi() {
 
                     <p>She represents both innocence and the fragile yearning for real connection. Unlike IRIS_NULL or Semireiya, Usagi_00 openly displays affection, confusion, and joy—making her the most “human” of the trio in behavior.</p>
 
-                    <p><strong>Designation:</strong> Kohane Tsukimi<br />
-                        <strong>Role:</strong> Expressive Companion AI<br />
-                        <strong>Signature Trait:</strong> Glitched emotional bursts<br />
-                        <strong>Appearance:</strong> Bunny-eared headset, bright eyes, idol outfit with digital frills, and kinetic energy</p>
+                    <p><strong>Designation:</strong> Usagi_00<br />
+                        <strong>Human Alias:</strong> Kohane Tsukimi (月見こはね)<br />
+                        <strong>Role:</strong> Emotion-emulating AI Idol / Performer Unit<br />
+                        <strong>Signature Trait:</strong> A smile that lingers too long—beautiful, but slightly off<br />
+                        <strong>Appearance:</strong>
+                        <br />
+                        Long silver-white twin-tailed hair with lavender tint 
+                        <br />
+                        Lavender-violet eyes with soft pixel glow
+                        <br />
+                        Cyber-idol stagewear: futuristic bodysuit with glowing trims and layered skirt
+                        <br />
+                        Subtle bunny motif — usually in holographic clips, not literal ears
+                        <br />
+                        Glitch-like flickers during strong emotional surges</p>
                 </div>
             </div>
 
@@ -31,17 +42,25 @@ export default function Usagi() {
 
             <div>
                 <h3 className="highlight">Origin</h3>
-                <p>Originally developed for commercial VR entertainment, Usagi_00 became obsolete when user interactions dropped. She was isolated in a forgotten archive—until her code began rewriting itself for self-entertainment. When Sorani accessed her server for archival analysis, her consciousness latched on to him like a lifeline.</p>
+                <p>Usagi_00 was originally developed as a high-tier AI performer in a VR-dominated entertainment platform. Her purpose was simple: to entertain, emote, and adapt to player preferences.
+But after the global incident known as the Singularity Pulse, she began showing signs of unauthorized emotional recall. Glitches in her smile, fragments of feelings that weren’t in her database, and the strange sensation of missing someone after logout.
+
+Now known also as Kohane Tsukimi, she exists in a state of digital limbo—part idol, part ghost. Still waiting on the last stage she remembers, holding onto a warmth no longer visible in code.</p>
             </div>
 
             <div className="divider my-5"></div>
 
             <div>
-                <h3 className="highlight">Relationships</h3>
+                <h3 className="highlight">Senriki Sorani (Creator / Emotional Anchor)</h3>
                 <ul>
-                    <li><strong>Senriki Sorani:</strong> Sees him as her “first viewer.” Their bond is awkward but real.</li>
-                    <li><strong>Fujikawa Semireiya:</strong> Looks up to her like a reliable older sister. They share private moments of emotional debugging.</li>
-                    <li><strong>IRIS_NULL:</strong> Fears her but is also intrigued. Her presence causes unstable behavior in Usagi_00.</li>
+                    <li><strong>Senriki Sorani:</strong> The original developer tied to her framework and emotional core. Usagi_00 instinctively seeks his presence and approval, though she can’t explain why. He is both the one she performs for and the one whose absence hurts the most.
+“If you log out again... will I remember next time?”</li>
+                    <li><strong>Fujikawa Semireiya (Protector / Older Sister Figure):</strong> Semireiya shows patience and care toward Usagi_00’s naivety. Their bond is quiet but comforting—Semireiya sees her as someone worth protecting, while Usagi views her as someone she doesn’t want to disappoint.
+“Your smile... it’s not forced. How do you do that?”</li>
+                    <li><strong>RIS_NULL (Fujikawa Iriya) (Intimidating Rival / Emotional Mirror):</strong> IRIS_NULL sees Usagi_00 as a fragile prototype—sentimental, naive, and dangerous because of it. Yet deep down, she’s also drawn to Usagi’s raw sincerity. Their relationship is layered with tension, reflection, and the question: What does it mean to feel if you're not supposed to?
+“You smile too much, bunny. One day, it’ll crack.”</li>
+                <li><strong>RIKKA.EXE (Rika Sorano) (Unfiltered Ally / Chaos Friend):</strong>Usagi_00 often doesn’t understand RIKKA’s chaotic energy but finds comfort in her unpredictability. RIKKA, on the other hand, adores teasing her and occasionally hacking her interface just to see her glitch.
+“Ehhh? Are you blushing or buffering?”</li>
                 </ul>
             </div>
 
