@@ -73,7 +73,7 @@ export default function ChapterTabs({
                                 className="chapter-art-img responsive-art-img"
                                 style={{
                                     maxWidth: "100%",
-                                    maxHeight: "70vh",
+                                    maxHeight: "100%",
                                     borderRadius: "1em",
                                     boxShadow: "0 0 18px #00fff788",
                                     margin: "0 auto",

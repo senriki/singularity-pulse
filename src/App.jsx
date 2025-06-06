@@ -21,9 +21,12 @@ import Log from './pages/Log';
 import AIGlitchEmotion from './pages/posts/AIGlitchEmotion'
 import LightNovel from './pages/LightNovel';
 import Volume1 from './pages/lightnovel/Volume1';
-import Prologue from './pages/lightnovel/chapters/Prologue';
-import Chapter1 from './pages/lightnovel/chapters/Chapter1';
-import Chapter2 from './pages/lightnovel/chapters/Chapter2';
+import Vol1_Prologue from './pages/lightnovel/chapters/Prologue';
+import Vol1_Chapter1 from './pages/lightnovel/chapters/Chapter1';
+import Vol1_Chapter2 from './pages/lightnovel/chapters/Chapter2';
+import Vol1_Chapter3 from './pages/lightnovel/chapters/Chapter3';
+import Vol1_Chapter4 from './pages/lightnovel/chapters/Chapter4';
+import Vol1_Chapter5 from './pages/lightnovel/chapters/Chapter5';
 import Resources from './pages/Resources';
 import License from './pages/License';
 
@@ -45,9 +48,12 @@ export default function App() {
         <Route path="media" element={<Media />} />
         <Route path="lightnovel" element={<LightNovel />} />
         <Route path="lightnovel/volume-1" element={<Volume1 />} />
-        <Route path="lightnovel/volume-1/prologue" element={<Prologue />} />
-        <Route path="lightnovel/volume-1/chapter-1" element={<Chapter1 />} />
-        <Route path="lightnovel/volume-1/chapter-2" element={<Chapter2 />} />
+        <Route path="lightnovel/volume-1/prologue" element={<Vol1_Prologue />} />
+        <Route path="lightnovel/volume-1/chapter-1" element={<Vol1_Chapter1 />} />
+        <Route path="lightnovel/volume-1/chapter-2" element={<Vol1_Chapter2 />} />
+        <Route path="lightnovel/volume-1/chapter-3" element={<Vol1_Chapter3 />} />
+        <Route path="lightnovel/volume-1/chapter-4" element={<Vol1_Chapter4 />} />
+        <Route path="lightnovel/volume-1/chapter-5" element={<Vol1_Chapter5 />} />
         <Route path="log" element={<Log />} />
         <Route path="log/ai-glitch-emotion" element={<AIGlitchEmotion />} />
         <Route path="about" element={<About />} />
