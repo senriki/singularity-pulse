@@ -21,7 +21,9 @@ export default function TerminalBlock({
         green: "#8fff5a",
         blue: "#5abaff",
         red: "#ff4f79",
-        magenta: "#c279ff"
+        magenta: "#c279ff",
+        white: "#fafafafa",
+        teal: "#2DFFDC",
     };
     const textColor = colorMap[color] || "#00fff7";
 

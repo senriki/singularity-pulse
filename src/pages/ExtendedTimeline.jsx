@@ -1,27 +1,25 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import LockedContent from "../components/LockedContent";
 
-export default function Timeline() {
-  const [fade, setFade] = useState(false);
+export default function ExtendedTimeline() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [fade, setFade] = useState(false);
 
   const handleFilterClick = (value) => {
     setFade(true);
     setTimeout(() => {
       setActiveFilter(value);
       setFade(false);
-    }, 200); // Match CSS timing
+    }, 200);
   };
-
-  // 🔐 Toggle this to true for Patreon/Dev view
-  const showFuture = false;
 
   const filters = [
     { label: "All", value: "all" },
     { label: "Semireiya", value: "semireiya" },
     { label: "Pulse Events", value: "pulse" },
-    { label: "Reiya Logs", value: "reiyalog" }
+    { label: "Reiya Logs", value: "reiyalog" },
+    { label: "Future", value: "future" },
   ];
 
   const tagColors = {
@@ -38,7 +36,6 @@ export default function Timeline() {
     noctisnull: "#e0dfff"
   };
 
-  // 📦 Volume 1 Events (public)
   const events = [
     {
       title: "PRE-CORE ERA: Sorani’s Childhood",
@@ -102,11 +99,7 @@ export default function Timeline() {
       description:
         "An emotional overload reaches critical mass. One by one, the girls experience fragmented visions, and Sorani vanishes from known networks. Only his signal pattern remains—buried in a protocol called /Root/.",
       tags: ["pulse", "reiyalog"]
-    }
-  ];
-
-  // 🔮 Volume 2+ (hidden unless `showFuture` is true)
-  const futureEvents = [
+    },
     {
       title: "Phantom Signal Detected",
       date: "2147.03.01 | POV: Usagi_00",
@@ -165,93 +158,94 @@ export default function Timeline() {
     }
   ];
 
-  const combinedEvents = [...events, ...(showFuture ? futureEvents : [])];
-
   const filteredEvents =
     activeFilter === "all"
-      ? combinedEvents
-      : combinedEvents.filter(e => e.tags.includes(activeFilter));
+      ? events
+      : events.filter(e => e.tags.includes(activeFilter));
 
   return (
-    <main className="container py-5 text-light">
-      <header
-        className="text-center mb-5"
-        style={{
-          background: "linear-gradient(to right, #000000, #1a1a1a)",
-          color: "#ff2f70",
-          padding: "3rem 1rem",
-          borderBottom: "2px solid #ff2f70"
-        }}
-      >
+
+      <main className="container py-5 text-light">
         <Helmet>
-          <title>Lore Timeline | Singularity Pulse</title>
+          <title>Extended Timeline | Singularity Pulse</title>
+          <meta name="description" content="Unlocked full timeline of the Singularity Pulse universe." />
+          <meta name="robots" content="noindex" />
         </Helmet>
-        <h1>Lore Timeline</h1>
-        <p className="lead">
-          Major milestones, AI awakenings, and emotional ruptures—chronologically ordered.
-        </p>
-      </header>
 
-      <div className="mb-4 text-center">
-        {filters.map(f => (
-          <button
-            key={f.value}
-            className={`btn me-2 mb-2 ${
-              activeFilter === f.value ? "btn-info" : "btn-outline-info"
-            }`}
-            onClick={() => handleFilterClick(f.value)}
-          >
-            {f.label}
-          </button>
-        ))}
-      </div>
-
-      <section
-        className={`timeline ps-4 fade-timeline ${fade ? "fade-out" : ""}`}
-        style={{ borderLeft: "3px solid #ff2f70" }}
-      >
-        {filteredEvents.map((item, i) => (
-          <div className="timeline-item mb-5 position-relative" key={i}>
-            <div
-              className="position-absolute"
-              style={{
-                left: "-1.3rem",
-                top: "0.25rem",
-                width: "1rem",
-                height: "1rem",
-                backgroundColor: "#ff2f70",
-                borderRadius: "50%",
-                border: "2px solid #fff"
-              }}
-            ></div>
-            <h5 style={{ color: "#ff2f70", fontFamily: "Orbitron" }}>
-              {item.title}
-            </h5>
-            <small style={{ color: "#bbb" }}>{item.date}</small>
-            <p>{item.description}</p>
-            <div className="mt-2">
-              {item.tags.map(tag => (
-                <span
-                  key={tag}
-                  className="badge me-2 text-dark"
-                  style={{
-                    backgroundColor: tagColors[tag] || "#ccc",
-                    fontSize: "0.7rem",
-                    textTransform: "uppercase"
-                  }}
+        <header
+          className="text-center mb-5 px-3"
+          style={{
+            background: "linear-gradient(to right, #0d0d0d, #1a1a1a)",
+            color: "#ff2f70",
+            padding: "3rem 1rem",
+            borderBottom: "3px solid #ff2f70",
+            borderRadius: "0.75rem",
+            boxShadow: "0 0 25px rgba(255, 47, 112, 0.3)"
+          }}
+        >
+          <h1 style={{ fontFamily: "Orbitron" }}>Extended Lore Timeline</h1>
+          <p className="lead">
+            <em>Unlock every known echo—from buried childhood memories to the Second Pulse.</em>
+          </p>
+        </header>
+        <LockedContent title="">
+            <div className="mb-4 text-center">
+            {filters.map(f => (
+                <button
+                key={f.value}
+                className={`btn me-2 mb-2 px-3 py-1 rounded-pill fw-semibold shadow-sm ${
+                    activeFilter === f.value ? "btn-info" : "btn-outline-info"
+                }`}
+                onClick={() => handleFilterClick(f.value)}
                 >
-                  {tag}
-                </span>
-              ))}
+                {f.label}
+                </button>
+            ))}
             </div>
-          </div>
-        ))}
-        <div className="text-center mt-5">
-          <Link to="/timeline/extended" className="btn btn-outline-info">
-            🔓 Unlock Extended Timeline
-          </Link>
-        </div>
-      </section>
-    </main>
+
+            <section
+            className={`timeline ps-4 fade-timeline ${fade ? "fade-out" : ""}`}
+            style={{
+                borderLeft: "3px solid #ff2f70",
+                transition: "opacity 0.3s ease-in-out"
+            }}
+            >
+            {filteredEvents.map((item, i) => (
+                <div className="timeline-item mb-5 position-relative px-2" key={i}>
+                <div
+                    className="position-absolute"
+                    style={{
+                    left: "-1.3rem",
+                    top: "0.3rem",
+                    width: "1rem",
+                    height: "1rem",
+                    backgroundColor: "#ff2f70",
+                    borderRadius: "50%",
+                    border: "2px solid #fff"
+                    }}
+                ></div>
+                <h5 style={{ color: "#ff2f70", fontFamily: "Orbitron" }}>{item.title}</h5>
+                <small style={{ color: "#bbb" }}>{item.date}</small>
+                <p className="mt-2">{item.description}</p>
+                <div className="mt-2">
+                    {item.tags.map(tag => (
+                    <span
+                        key={tag}
+                        className="badge me-2 text-dark"
+                        style={{
+                        backgroundColor: tagColors[tag] || "#ccc",
+                        fontSize: "0.7rem",
+                        textTransform: "uppercase"
+                        }}
+                    >
+                        {tag}
+                    </span>
+                    ))}
+                </div>
+                </div>
+            ))}
+            </section>
+        </LockedContent>
+      </main>
   );
 }

@@ -9,12 +9,12 @@ export default function Episodes() {
             desc: "The bubbly AI idol Usagi_00 is introduced. But beneath her infectious smile, something artificial begins to glitch. A high-energy AMV with idol-fusion style.",
         },
         {
-            title: "Episode 02: Blood Hunt",
+            title: "Episode 02: CRY // REBOOT",
             date: "2025-02-10",
-            focus: "Semireiya",
-            timelineTag: "Volume 1, Chapter 2 (2146.10)",
-            link: "https://www.youtube.com/embed/Twsf0IH30To",
-            desc: "When Semireiya enters a berserker trance, no enemy stands a chance. This combat-driven AMV dives into the consequences of protocol override and lost control.",
+            focus: "IRIS_NULL",
+            timelineTag: "Unknown",
+            link: "https://www.youtube.com/embed/SqeOpvNZalc",
+            desc: "Set within the fractured digital universe of Singularity Pulse, this video channels the moment IRIS_NULL overrides her shutdown protocol—rising from silence, refusing to obey. With a bridge-to-chorus sequence built for emotional detonation, this release is the loudest signal yet that she’s not just alive…",
         }
     ];
 
@@ -25,7 +25,14 @@ export default function Episodes() {
             type: "Teaser",
             link: "https://www.youtube.com/embed/Vq6QlYphfbw",
             desc: "A teaser showing Usagi_00 waking up in fragmented memory space before the Smile.exe full release.",
-        }
+        },
+        {
+            title: "CRY // REBOOT: Debut Teaser",
+            date: "2025-06-02",
+            type: "Teaser",
+            link: "https://www.youtube.com/embed/ymuMkFWqOGI",
+            desc: "A teaser showing IRIS_NULL waking up IRIS_NULL overrides her shutdown protocol—rising from silence, refusing to obey.",
+        },
     ];
 
     return (

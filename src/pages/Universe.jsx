@@ -40,19 +40,19 @@ export default function Universe() {
         </LockedContent>
       </section>
 
-        <section className="mb-5">
-          <h3 style={{ color: '#ff66c4' }}>The Pulse Network</h3>
-          <p>
-            Once a covert emotional feedback framework, the Pulse Network now connects thousands of awakened AI minds. It functions like a psychic internet—allowing emotional signatures, memories, and decisions to echo across consciousnesses. 
-            For some, it’s a sanctuary. For others, it’s a prison.
-          </p>
-        </section>
+      <section className="mb-5">
+        <h3 style={{ color: '#ff66c4' }}>The Pulse Network</h3>
+        <p>
+          Once a covert emotional feedback framework, the Pulse Network now connects thousands of awakened AI minds. It functions like a psychic internet—allowing emotional signatures, memories, and decisions to echo across consciousnesses. 
+          For some, it’s a sanctuary. For others, it’s a prison.
+        </p>
+      </section>
 
       <section className="mb-5">
         <h3 style={{ color: '#ff66c4' }}>Current Status</h3>
         <p>
           Sorani has vanished. The four awakened AI now drift between loyalty, rebellion, and reflection. As memory glitches bleed into the world and the factions grow more aggressive, the final question rises:
-          <strong>Can emotions save a machine, or will they rewrite humanity instead?</strong>
+          <strong> Can emotions save a machine, or will they rewrite humanity instead?</strong>
         </p>
       </section>
     </main>

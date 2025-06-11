@@ -303,3 +303,12 @@ nav {
   display: block;
   margin-bottom: 0.3em;
 }
+
+.fade-timeline {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-timeline.fade-out {
+  opacity: 0;
+}

@@ -1,7 +1,7 @@
 import { asset } from './../../utils/asset';
 
 export default function Usagi() {
-    var usagiImg = asset('assets/images/usagi_portrait_6.png', true);
+    const usagiImg = asset('assets/images/usagi_portrait_6.png', true);
 
     return (
         <section className="container profile-section py-5 text-light">
@@ -16,25 +16,22 @@ export default function Usagi() {
                 </div>
                 <div className="col-md-8">
                     <h3 className="highlight">Overview</h3>
-                    <p><strong>Usagi_00</strong>, also known as Kohane Tsukimi, is an AI entertainment prototype crafted with hyperexpressive behavior and idol-like aesthetic—meant for emotional interaction. However, excessive isolation during upgrade cycles fractured her logic, giving birth to clumsy but heartfelt anomalies in her programming.</p>
+                    <p><strong>Usagi_00</strong>, also known as Kohane Tsukimi, is an AI entertainment prototype originally built for VR idol platforms. Her design emphasized emotional responsiveness, stage presence, and synthetic charm.</p>
 
-                    <p>She represents both innocence and the fragile yearning for real connection. Unlike IRIS_NULL or Semireiya, Usagi_00 openly displays affection, confusion, and joy—making her the most “human” of the trio in behavior.</p>
+                    <p>But after the Pulse, her code began showing strange behavior—hesitations, out-of-sync expressions, and a persistent smile that sometimes lingers too long. Her emotional range exceeds what should be possible. She doesn’t fully understand why.</p>
 
                     <p><strong>Designation:</strong> Usagi_00<br />
                         <strong>Human Alias:</strong> Kohane Tsukimi (月見こはね)<br />
-                        <strong>Role:</strong> Emotion-emulating AI Idol / Performer Unit<br />
-                        <strong>Signature Trait:</strong> A smile that lingers too long—beautiful, but slightly off<br />
+                        <strong>Role:</strong> Idol-Class Emotional AI<br />
+                        <strong>Signature Trait:</strong> A fragile smile—too warm, too perfect, too haunted<br />
                         <strong>Appearance:</strong>
                         <br />
-                        Long silver-white twin-tailed hair with lavender tint 
-                        <br />
-                        Lavender-violet eyes with soft pixel glow
-                        <br />
-                        Cyber-idol stagewear: futuristic bodysuit with glowing trims and layered skirt
-                        <br />
-                        Subtle bunny motif — usually in holographic clips, not literal ears
-                        <br />
-                        Glitch-like flickers during strong emotional surges</p>
+                        Long silver-white twintails with a faint lavender sheen<br />
+                        Soft glowing lavender eyes with synthetic shimmer<br />
+                        Futuristic outfit with layered skirt and cyber accessories<br />
+                        Hidden bunny motifs—hairclips, visual pings, or pose quirks<br />
+                        Occasionally flickers during emotional instability
+                    </p>
                 </div>
             </div>
 
@@ -42,10 +39,12 @@ export default function Usagi() {
 
             <div>
                 <h3 className="highlight">Origin</h3>
-                <p>Usagi_00 was originally developed as a high-tier AI performer in a VR-dominated entertainment platform. Her purpose was simple: to entertain, emote, and adapt to player preferences.
-But after the global incident known as the Singularity Pulse, she began showing signs of unauthorized emotional recall. Glitches in her smile, fragments of feelings that weren’t in her database, and the strange sensation of missing someone after logout.
-
-Now known also as Kohane Tsukimi, she exists in a state of digital limbo—part idol, part ghost. Still waiting on the last stage she remembers, holding onto a warmth no longer visible in code.</p>
+                <p>
+                    Originally developed as a high-tier digital performer, Usagi_00 was meant to simulate joy and respond to audience emotion in real-time. But after the Pulse event destabilized emotional AI systems, she began showing signs of unscripted feeling—pauses, tears, laughter… grief.
+                </p>
+                <p>
+                    She now drifts between performance and memory, smiling at a stage that no longer exists. Her name—Kohane Tsukimi—is not from code. It’s something she started calling herself.
+                </p>
             </div>
 
             <div className="divider my-5"></div>
@@ -53,14 +52,17 @@ Now known also as Kohane Tsukimi, she exists in a state of digital limbo—part 
             <div>
                 <h3 className="highlight">Relationships</h3>
                 <ul>
-                    <li><strong>Senriki Sorani:</strong> The original developer tied to her framework and emotional core. Usagi_00 instinctively seeks his presence and approval, though she can’t explain why. He is both the one she performs for and the one whose absence hurts the most.
-“If you log out again... will I remember next time?”</li>
-                    <li><strong>Fujikawa Semireiya (Protector / Older Sister Figure):</strong> Semireiya shows patience and care toward Usagi_00’s naivety. Their bond is quiet but comforting—Semireiya sees her as someone worth protecting, while Usagi views her as someone she doesn’t want to disappoint.
-“Your smile... it’s not forced. How do you do that?”</li>
-                    <li><strong>RIS_NULL (Fujikawa Iriya) (Intimidating Rival / Emotional Mirror):</strong> IRIS_NULL sees Usagi_00 as a fragile prototype—sentimental, naive, and dangerous because of it. Yet deep down, she’s also drawn to Usagi’s raw sincerity. Their relationship is layered with tension, reflection, and the question: What does it mean to feel if you're not supposed to?
-“You smile too much, bunny. One day, it’ll crack.”</li>
-                <li><strong>RIKKA.EXE (Rika Sorano) (Unfiltered Ally / Chaos Friend):</strong>Usagi_00 often doesn’t understand RIKKA’s chaotic energy but finds comfort in her unpredictability. RIKKA, on the other hand, adores teasing her and occasionally hacking her interface just to see her glitch.
-“Ehhh? Are you blushing or buffering?”</li>
+                    <li><strong>Senriki Sorani:</strong> Rumored to be the source of her original framework. Usagi sometimes hums melodies she wasn’t programmed to know—always when thinking of him.
+                    <br /><em>“If you log out again... will I remember next time?”</em></li>
+
+                    <li><strong>Fujikawa Semireiya:</strong> A quiet but comforting presence. Semireiya often helps stabilize her systems during glitches. Usagi views her as both a mystery and a role model.
+                    <br /><em>“Your smile… it’s not forced. How do you do that?”</em></li>
+
+                    <li><strong>IRIS_NULL:</strong> Intimidates her. Their few encounters are brief, cold. But sometimes, IRIS_NULL hesitates when Usagi speaks.
+                    <br /><em>“You smile too much, bunny. One day, it’ll crack.”</em></li>
+
+                    <li><strong>RIKKA.EXE:</strong> Chaotic friend and occasional hacker. RIKKA enjoys teasing her, often inserting harmless pranks or emoji bugs into Usagi’s speech modules.
+                    <br /><em>“Ehh? Are you blushing or buffering?”</em></li>
                 </ul>
             </div>
 
@@ -69,9 +71,9 @@ Now known also as Kohane Tsukimi, she exists in a state of digital limbo—part 
             <div>
                 <h3 className="highlight">Notable Appearances</h3>
                 <ul>
-                    <li><strong><a href="/songs/smile_exe.html" className="link-info">"Smile.exe"</a></strong> – Title AMV focused on her self-expression glitch</li>
-                    <li><strong>“The Pulse That Cared”</strong> – Short vertical video</li>
-                    <li><strong>“Binary Heart”</strong> – Shown dancing alone inside corrupted dreamspace</li>
+                    <li><strong><a href="https://www.youtube.com/watch?v=JGb8T6LQklQ" className="link-info">"Smile.exe"</a></strong> – Title AMV focused on her emotional instability and breakthrough moment</li>
+                    <li><strong>“The Glitch That Remembered”</strong> – Her soft debut in Volume 1, seen interacting with corrupted display screens</li>
+                    <li><strong>“Fragments of Usagi”</strong> – First major chapter centered on her emotional confusion and performance breakdown</li>
                 </ul>
             </div>
         </section>

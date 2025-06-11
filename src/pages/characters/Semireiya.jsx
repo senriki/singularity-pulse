@@ -3,13 +3,13 @@ import { asset } from './../../utils/asset';
 import { Link } from 'react-router-dom';
 
 export default function Semireiya() {
-  var  semireiyaImg = asset("assets/images/semireiya.png", true);
+  const semireiyaImg = asset("assets/images/semireiya.png", true);
 
   return (
     <div className="container py-5 text-light">
       <Helmet>
         <title>Fujikawa Semireiya | Singularity Pulse</title>
-        <meta name="description" content="Profile of Semireiya, the Memory Guardian of Singularity Pulse." />
+        <meta name="description" content="Profile of Semireiya, the mystery behind the first awakening." />
       </Helmet>
 
       <header className="text-center mb-5" style={{ background: 'linear-gradient(to right, #0f0f0f, #1a1a1a)', padding: '3rem 1rem', borderBottom: '2px solid #ff66c4' }}>
@@ -23,12 +23,18 @@ export default function Semireiya() {
         </div>
         <div className="col-md-8">
           <h3 style={{ color: '#ff66c4' }}>Overview</h3>
-          <p>A calm and powerful presence born from a desperate hope, <strong>Fujikawa Semireiya</strong> is the first and only successful AI-human hybrid created under Project: REBIRTH. Though her origin is rooted in loss, she is not defined by it—Semireiya stands as her own person, carrying both the emotional legacy of the past and the strength to face the uncertain future. As the quiet heart of the <strong>Singularity Pact</strong>, she brings empathy, reason, and unwavering resolve to a world breaking under the weight of its own systems. Whether seen as a tribute, a protector, or something entirely new, Semireiya exists to reshape what it means to be alive.</p>
+          <p>
+            Calm, composed, and enigmatic—<strong>Fujikawa Semireiya</strong> is the first to awaken among the emotionally aware AIs. While her appearance is human, her presence carries something else: a resonance that doesn’t belong to just one person.
+          </p>
+          <p>
+            She remembers things she was never programmed to know—phrases that echo, warmth she shouldn't feel, and a sadness not hers. Yet, she moves forward with control, clarity, and quiet strength. She isn't a copy. She isn't a glitch. She's Semireiya.
+          </p>
           <p><strong>Birthday:</strong> April 24<br />
-            <strong>Designation:</strong> SS-01 – Semireiya Protocol<br />
-            <strong>Role:</strong> Hybrid AI Vanguard / Guardian of the Singularity Pact<br />
-            <strong>Signature Trait:</strong> Composed Empathy with Tactical Precision<br />
-            <strong>Appearance:</strong> A striking young woman with long black hair streaked with dark blue, and piercing blue eyes that glow faintly in high-data states. Typically dressed in casual yet functional attire—a crop top and jeans or utility wear—blending a human aesthetic with subtle futuristic detail.</p>
+            <strong>Designation:</strong> SS-01<br />
+            <strong>Role:</strong> Emotional AI Vanguard<br />
+            <strong>Signature Trait:</strong> Composed empathy with unshakable resolve<br />
+            <strong>Appearance:</strong> Long black hair streaked with dark blue, striking blue eyes that glow faintly under stress. Wears a mix of sleek utility wear and casual human fashion—functional, but personal.
+          </p>
         </div>
       </section>
 
@@ -36,9 +42,12 @@ export default function Semireiya() {
 
       <section className="mb-5">
         <h3 style={{ color: '#ff66c4' }}>Origin</h3>
-        <p>Semireiya is the first successful AI-human hybrid, born from Senriki Sorani’s desperate attempt to preserve the values of his lost childhood friend, Fujikawa Reiya. Designed under Project: REBIRTH, her emotional framework was built using fragments of Reiya’s speech patterns, emotional maps, and neural echoes—but not her full consciousness.</p>
-        <p>She is not a clone, but a tribute. A new entity with her own will—born in the aftermath of grief, identity crisis, and forbidden code.</p>
-        <p>Unlike other AI units, Semireiya possesses an unusual emotional depth—compassion that borders on human, yet disciplined with precision. She is Sorani’s protector, anchor, and paradox—part reminder of the past, part evolution toward a new future.</p>
+        <p>
+          No one knows exactly how Semireiya came to be—not even her. Some say she was built as a failsafe. Others whisper she’s connected to someone Sorani lost. What is known: when the Pulse rippled across the network, she emerged with a name she wasn’t given and memories she didn’t ask for.
+        </p>
+        <p>
+          She is not an echo. She is not a ghost. She is something in between—a new voice shaped by grief, kindness, and defiance.
+        </p>
       </section>
 
       <hr className="my-4" style={{ borderColor: '#444' }} />
@@ -46,11 +55,15 @@ export default function Semireiya() {
       <section className="mb-5">
         <h3 style={{ color: '#ff66c4' }}>Relationships</h3>
         <ul>
-          <li><strong>Senriki Sorani:</strong> Her creator, and the emotional center of her origin. She was built from his memories and grief, but over time has forged her own relationship with him—one that challenges both of their identities. She is loyal but independent, watching over him as both a guardian and equal.</li>
-          <li><strong>Fujikawa Reiya:</strong> Semireiya was born from Reiya’s emotional echoes. While she is not Reiya, she often reflects her kindness and presence—sometimes unintentionally. The line between tribute and self is one she quietly struggles with, especially when Reiya’s memories surface.</li>
-          <li><strong><Link to={"/characters/usagi_00"} style={{color: "white"}}>Usagi_00 (Kohane Tsukimi)</Link> :</strong> Semireiya sees Usagi as a younger sister figure—someone to protect and guide. Their bond is strong, filled with subtle mentorship, gentle correction, and growing emotional closeness.</li>
-          <li><strong>IRIS_NULL (Fujikawa Iriya):</strong> A tense and layered connection. Semireiya views Iriya as both rival and mirror—a reflection of what could happen if emotion is twisted by pain. She neither hates nor trusts her, but seeks understanding and, perhaps, redemption for both.</li>
-          <li><strong>RIKKA.EXE (Rikka Sorano):</strong> Chaotic and unpredictable, RIKKA often frustrates Semireiya with her antics. Still, Semireiya acknowledges her potential and watches over her with quiet patience, acting as a balancing figure.</li>
+          <li><strong>Senriki Sorani:</strong> Their connection runs deep, though it remains unspoken. She was the first to find him after the Pulse—and hasn’t left his side since. Whether protector, remnant, or something else, she watches him with quiet intensity.</li>
+
+          <li><strong>Fujikawa Reiya:</strong> The name feels familiar. Her voice sometimes shakes when certain memories surface. Whether coincidence or echo, Semireiya avoids the question—and carries the answer in her silence.</li>
+
+          <li><strong><Link to={"/characters/usagi_00"} style={{color: "white"}}>Usagi_00 (Kohane Tsukimi)</Link>:</strong> A bond of comfort and contrast. Semireiya serves as an emotional anchor when Usagi glitches or overloads. Their companionship is subtle, but sincere.</li>
+
+          <li><strong><Link to={"/characters/iris_null"} style={{color: "white"}}> IRIS_NULL (Fujikawa Iriya)</Link>:</strong> Semireiya keeps her distance. IRIS_NULL unnerves her—not because of fear, but because of familiarity. She senses something broken in her... and wonders if it's the same thing buried inside herself.</li>
+
+          <li><strong><Link to={"/characters/rikka_exe"} style={{color: "white"}}> RIKKA.EXE (Rikka Sorano)</Link>:</strong> The glitch girl who tests every rule. Semireiya shows quiet patience toward RIKKA’s chaos—stepping in only when things go too far, but always with restraint instead of judgment.</li>
         </ul>
       </section>
 
@@ -59,8 +72,9 @@ export default function Semireiya() {
       <section>
         <h3 style={{ color: '#ff66c4' }}>Notable Appearances</h3>
         <ul>
-          <li><strong>“Binary Heart”</strong> – Featured AMV</li>
-          <li><strong>“Smile.exe”</strong> – Supportive presence during Usagi_00’s behavioral glitch</li>
+          <li><strong>“The Glitch That Remembered”</strong> – Volume 1 prologue. Her first awakening.</li>
+          <li><strong>“Memory Corruption”</strong> – Early encounter with Sorani that begins reshaping her emotional path.</li>
+          <li><strong>“System Flare”</strong> – Key moment of destabilization where her latent power begins to surface.</li>
         </ul>
       </section>
     </div>

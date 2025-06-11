@@ -12,6 +12,16 @@ export default function Media() {
       desc: "A soft, introspective wallpaper featuring Fujikawa Semireiya’s official art.",
       image: "assets/media/semireiya_wallpaper.png",
     },
+    {
+      title: "Semireiya – Chibi Art",
+      desc: "A soft, introspective wallpaper featuring Fujikawa Semireiya’s official chibi art.",
+      image: "assets/media/semireiya_wallpaper_chibi.jpg",
+    },
+    {
+      title: "IRIS_NULL",
+      desc: "IRUS_NULL aka Fujikawa Iriya’s concept art.",
+      image: "assets/media/iris_null_wallpaper.png",
+    },
   ];
 
   const teaserVisuals = [

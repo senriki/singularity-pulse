@@ -4,7 +4,7 @@ export default function LockedContent({ title = "Exclusive Content", children })
   const [unlocked, setUnlocked] = useState(false);
   const [input, setInput] = useState("");
 
-  const correctCode = "pulsecode2025"; // <- Replace this as needed
+  const correctCode = import.meta.env.VITE_PATREON_KEY;
 
   const handleSubmit = (e) => {
     e.preventDefault();

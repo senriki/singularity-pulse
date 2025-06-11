@@ -2,7 +2,7 @@ import ChapterLayout from "../../../components/LightNovel/ChapterLayout";
 import Illust from "../../../assets/lightnovel-art/vol-1-chapter-5.png"
 import TerminalBlock from "../../../components/LightNovel/Terminal/TerminalBlock";
 
-export default function Chapter5() {
+export default function Chapter11() {
   return (
     <ChapterLayout
       title="Chapter 5: IRIS_NULL Protocol"
