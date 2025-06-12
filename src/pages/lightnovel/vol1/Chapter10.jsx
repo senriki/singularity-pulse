@@ -69,7 +69,8 @@ export default function Chapter10() {
           <p><b>Senriki Sorani.</b></p>
         </>
       }
-      prev={{ path: "/lightnovel/volume-1/chapter-4", label: "Chapter 4" }}
+      prev={{ path: "/lightnovel/volume-1/chapter-9", label: "Chapter 9" }}
+      next={{ path: "/lightnovel/volume-1/chapter-11", label: "Chapter 11" }}
     />
   );
 }
