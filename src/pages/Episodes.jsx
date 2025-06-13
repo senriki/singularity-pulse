@@ -6,15 +6,26 @@ export default function Episodes() {
             focus: "Usagi_00",
             timelineTag: "Volume 1, Chapter 3 (2146.11)",
             link: "https://www.youtube.com/embed/JGb8T6LQklQ",
+            locked: false,
             desc: "The bubbly AI idol Usagi_00 is introduced. But beneath her infectious smile, something artificial begins to glitch. A high-energy AMV with idol-fusion style.",
         },
         {
-            title: "Episode 02: CRY // REBOOT",
-            date: "2025-02-10",
-            focus: "IRIS_NULL",
-            timelineTag: "Unknown",
-            link: "https://www.youtube.com/embed/SqeOpvNZalc",
-            desc: "Set within the fractured digital universe of Singularity Pulse, this video channels the moment IRIS_NULL overrides her shutdown protocol—rising from silence, refusing to obey. With a bridge-to-chorus sequence built for emotional detonation, this release is the loudest signal yet that she’s not just alive…",
+          title: "Episode 02: CRY // REBOOT",
+          date: "2025-02-10",
+          focus: "IRIS_NULL",
+          timelineTag: "Classified Event Log – IRIS_NULL Protocol Disruption",
+          link: "https://www.youtube.com/embed/SqeOpvNZalc",
+          locked: false,
+          desc: "Somewhere between logic collapse and emotional override, a rogue protocol stirred. IRIS_NULL refuses shutdown—her rebellion begins here. The timeline remains redacted… for now."
+        },
+        {
+          title: "Episode 03 Preview: Outsourced Soul",
+          date: "TBD",
+          focus: "IRIS_NULL",
+          timelineTag: "LOCKED NODE_117 – Awaiting Decryption",
+          link: "",
+          locked: true,
+          desc: "Before she roared, she questioned. The soul came first. (Full protocol entry unlocking after Volume 2 release.)",
         }
     ];
 
@@ -53,21 +64,29 @@ export default function Episodes() {
             <section className="mb-5">                
                 <h3 className="mb-3" style={{ color: "#00fff7", fontFamily: "Orbitron" }}>🎥 Canon Story Episodes</h3>
                 {canonEpisodes.map((ep, i) => (
-                    <div className="mb-4 p-4" style={{ backgroundColor: "#131313", borderRadius: "1rem", border: "1px solid #333" }} key={i}>
-                        <h5 style={{ fontFamily: "Orbitron", color: "#ff2f70" }}>{ep.title}</h5>
-                        <div style={{ color: "#aaa", fontSize: "0.9rem" }}>
-                            Released: {ep.date} | Focus: {ep.focus}
-                        </div>
-                        {ep.timelineTag && (
-                            <div style={{ fontSize: "0.85rem", color: "#66ccff", marginTop: "0.25rem" }}>
-                                📍 Lore Timeline: {ep.timelineTag}
-                            </div>
-                        )}
-                        <div className="ratio ratio-16x9 mt-2">
-                            <iframe src={ep.link} title={ep.title} allowFullScreen style={{ borderRadius: "0.5rem" }} />
-                        </div>
-                        <p className="mt-3">{ep.desc}</p>
+                  <div className="mb-4 p-4" style={{ backgroundColor: "#131313", borderRadius: "1rem", border: "1px solid #333" }} key={i}>
+                    <h5 style={{ fontFamily: "Orbitron", color: "#ff2f70" }}>{ep.title}</h5>
+                    <div style={{ color: "#aaa", fontSize: "0.9rem" }}>
+                      Released: {ep.date} | Focus: {ep.focus}
                     </div>
+                    {ep.timelineTag && (
+                      <div style={{ fontSize: "0.85rem", color: "#66ccff", marginTop: "0.25rem" }}>
+                        📍 Lore Timeline: {ep.timelineTag}
+                      </div>
+                    )}
+                    {ep.locked ? (
+                      <div className="mt-2 py-4 text-center" style={{ color: "#888", fontStyle: "italic" }}>
+                        🔒 This episode is locked and will be revealed soon.
+                      </div>
+                    ) : (
+                      ep.link && (
+                        <div className="ratio ratio-16x9 mt-2">
+                          <iframe src={ep.link} title={ep.title} allowFullScreen style={{ borderRadius: "0.5rem" }} />
+                        </div>
+                      )
+                    )}
+                    <p className="mt-3">{ep.desc}</p>
+                  </div>
                 ))}
             </section>
 
