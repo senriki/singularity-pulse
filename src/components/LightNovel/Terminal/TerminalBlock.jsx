@@ -4,8 +4,8 @@ export default function TerminalBlock({
     lines = [],
     prompt = ">>",
     color = "cyan",
-    typewriter = false,
-    typewriterMode = "line", // "line" or "char"
+    typewriter = true,
+    typewriterMode = "char", // "line" or "char"
     copyable = false,
     customStyle = {},
     cursorStyle = {},

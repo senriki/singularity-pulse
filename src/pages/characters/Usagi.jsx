@@ -1,7 +1,7 @@
 import { asset } from './../../utils/asset';
 
 export default function Usagi() {
-    const usagiImg = asset('assets/images/usagi_portrait_6.png', true);
+    const usagiImg = asset('assets/images/usagi_portrait_7.png', true);
 
     return (
         <section className="container profile-section py-5 text-light">

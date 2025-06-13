@@ -24,10 +24,10 @@ export default function HeroSection() {
       }, 30);
     };
 
-    glitchText.addEventListener("mouseenter", handleHover);
+    // glitchText.addEventListener("mouseenter", handleHover);
 
     return () => {
-      glitchText.removeEventListener("mouseenter", handleHover);
+      // glitchText.removeEventListener("mouseenter", handleHover);
     };
   }, []);
 
@@ -35,16 +35,16 @@ export default function HeroSection() {
     <section className="d-flex align-items-center justify-content-center text-center fade-in" style={{ height: "100vh", position: "relative", zIndex: 2 }}>
       <div style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", padding: "3rem", borderRadius: "1rem", border: "1px solid rgba(255, 255, 255, 0.1)", backdropFilter: "blur(6px)", maxWidth: "720px" }}>
         <h1 className="glitch mb-3" ref={glitchRef}>{originalText}</h1>
-        <p className="lead">A narrative-driven AI music universe with cyberpunk soul, anime spirit, and digital memories.</p>
+        <p className="lead">
+          An original AI-driven story world—where music, memories, and machines collide.<br />
+          Born from AMVs. Fueled by emotion. Written in code, heart, and glitch.
+        </p>
         <Link 
           to={"universe"}
           className="btn btn-outline-info mt-4 glow-button"
         >
           Explore the Lore
         </Link>
-        {/* <a href={import.meta.env.VITE_BASE_URL+"universe"} className="btn btn-outline-info mt-4 glow-button" onClick={() => document.getElementById("pulseSound").play()}>
-          Explore the Lore
-        </a> */}
       </div>
     </section>
   );

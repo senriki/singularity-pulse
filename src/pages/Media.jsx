@@ -9,7 +9,7 @@ export default function Media() {
     },
     {
       title: "Semireiya – Memory Core Visual",
-      desc: "A soft, introspective wallpaper featuring Fujikawa Semireiya’s official art.",
+      desc: "A soft, introspective wallpaper featuring Fujikawa Semireiya’s official art. Drawn by Kang Ciloks",
       image: "assets/media/semireiya_wallpaper.png",
     },
     {
@@ -35,7 +35,7 @@ export default function Media() {
   const artPieces = [
     {
       title: "Commission – Semireiya (B/W)",
-      desc: "A black-and-white art commission for Semireiya showing her calm and confident stance.",
+      desc: "A black-and-white art commission for Semireiya showing her calm and confident stance. Art by Tom Capung",
       image: "assets/media/bw-semireiya.jpg",
     },
     {

@@ -1,7 +1,7 @@
 import { asset } from './../../utils/asset';
 
 export default function Iris() {
-    const irisImg = asset('assets/images/iris_null_2.png', true);
+    const irisImg = asset('assets/images/iris_null_potrait.png', true);
 
     return (
         <section className="container profile-section py-5 text-light">

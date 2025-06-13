@@ -1,7 +1,7 @@
 import { asset } from './../../utils/asset';
 
 export default function Rikka() {
-    const rikkaImg = asset('assets/images/rikka_exe_2.png', true);
+    const rikkaImg = asset('assets/images/rikka_exe_potrait.png', true);
 
     return (
         <section className="container profile-section py-5 text-light">

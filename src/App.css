@@ -109,7 +109,7 @@ nav {
   color: #00fff7;
   font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
-  animation: glitch 1s infinite;
+  /* animation: glitch 5s infinite; */
   cursor: pointer;
 }
 

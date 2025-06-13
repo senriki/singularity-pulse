@@ -3,7 +3,7 @@ import { asset } from './../../utils/asset';
 import { Link } from 'react-router-dom';
 
 export default function Semireiya() {
-  const semireiyaImg = asset("assets/images/semireiya.png", true);
+  const semireiyaImg = asset("assets/images/semireiya_portrait_3.png", true);
 
   return (
     <div className="container py-5 text-light">

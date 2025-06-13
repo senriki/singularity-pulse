@@ -8,10 +8,10 @@ export default function HighlightCards() {
           <div className="card bg-dark h-100">
             <div className="card-body">
               <h4 className="card-title" style={{ color: "#ff66c4" }}>📼 Latest Episode</h4>
-              <p className="card-text">
-                Watch the newest AMV chapter featuring <strong>Usagi_00’s</strong> emotional evolution and data breach revelations.
+              <p className="card-text" style={{color:"white"}}>
+                Watch the newest AMV chapter featuring <strong>IRIS_NULL</strong> overrides her shutdown protocol—rising from silence, refusing to obey.
               </p>
-              <a href="https://youtube.com/@senrikis" className="btn btn-info">Watch Now</a>
+              <a href="https://www.youtube.com/watch?v=SqeOpvNZalc" className="btn btn-outline-info">Watch Now</a>
             </div>
           </div>
         </div>
@@ -19,12 +19,12 @@ export default function HighlightCards() {
           <div className="card bg-dark h-100">
             <div className="card-body">
               <h4 className="card-title" style={{ color: "#ff66c4" }}>🧬 Meet the AIs</h4>
-              <p className="card-text">
-                Get to know Semireiya, Usagi_00, and IRIS_NULL — three sentient constructs born from trauma, memory, and code.
+              <p className="card-text" style={{color:"white"}}>
+                Discover <strong>Semireiya</strong>, <strong>Usagi_00</strong>, <strong>RIKKA.EXE</strong> and <strong>IRIS_NULL</strong> — sentient AI forged from loss, love, and forbidden memory protocols.
               </p>
               <Link
                 to={"characters"}
-                className="btn btn-outline-light"
+                className="btn btn-outline-info"
               >
                 View Characters
               </Link>

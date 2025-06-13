@@ -36,7 +36,7 @@ export default function ChapterLayout({
             background: "linear-gradient(to right, #0f0f0f, #1a1a1a)",
             border: "1px solid #333",
             borderRadius: "1rem",
-            maxWidth: "800px",
+            maxWidth: "1024px",
             margin: "0 auto",
           }}
         >

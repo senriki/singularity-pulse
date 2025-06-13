@@ -9,25 +9,25 @@ const characters = [
   {
     id: 'semireiya',
     name: 'Fujikawa Semireiya',
-    image: 'assets/images/semireiya.png',
+    image: 'assets/images/semireiya_portrait_3.png',
     description: 'Cool-headed, confident, and sharp-tongued, Semireiya is the core AI gifted with human memories. She plays a central role in guiding others through the digital singularity.'
   },
   {
     id: 'usagi_00',
     name: 'Usagi_00',
-    image: 'assets/images/usagi_portrait_6.png',
+    image: 'assets/images/usagi_portrait_7.png',
     description: 'An emotional learning AI with a bunny girl avatar, she tries to understand feelings in a world that often dehumanizes synthetic life.'
   },
   {
     id: 'iris_null',
     name: 'IRIS_NULL',
-    image: 'assets/images/iris_null_2.png',
+    image: 'assets/images/iris_null_potrait.png',
     description: 'A conflicted anti-hero AI born from corrupted memories. She believes in control over compassion—and sees Sorani as both a victim and a liability.'
   },
   {
     id: 'rikka_exe',
     name: 'RIKKA.EXE',
-    image: 'assets/images/rikka_exe_2.png',
+    image: 'assets/images/rikka_exe_potrait.png',
     description: 'Born from an abandoned security AI initiative, RIKKA.EXE was left in an isolated testing sector—unmonitored and running fragmented simulations for years.'
   },
   // {
