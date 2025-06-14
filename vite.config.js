@@ -24,6 +24,7 @@ export default ({ mode }) => {
           start_url: '/',
           display: 'standalone',
           background_color: '#000000',
+          description: 'Singularity Pulse – AI-generated anime music universe blending story, emotion, and glitch memory.',
           theme_color: '#00fff7',
           icons: [
             {
@@ -33,6 +34,16 @@ export default ({ mode }) => {
             },
             {
               src: env.VITE_BASE_URL || '/' + '/cover-image.png',
+              sizes: '512x512',
+              type: 'image/png'
+            },
+            {
+              src: '/icon-192.png',
+              sizes: '192x192',
+              type: 'image/png'
+            },
+            {
+              src: '/icon-512.png',
               sizes: '512x512',
               type: 'image/png'
             }
